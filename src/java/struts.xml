@@ -31,6 +31,9 @@
         <action name="Contact" class="action.ContactAction">
             <result name="success">/Contact.jsp</result>
         </action>
+        <action name="SendMail" class="action.SendMailAction">
+            <result name="success">/Contact.jsp</result>
+        </action>
         
     </package>
 </struts>

@@ -45,25 +45,22 @@
                                                 <button type="button" class="close">×</button>
                                             </div>
                                             <p>Write your message here. Fill out the form:</p>
-                                            <form>
-
+                                            <form action="SendMail" method="post">
                                                 <fieldset>
-
                                                     <div class="row-fluid">
                                                         <div class="span6">
-                                                            <input type="text" name="author[name]" placeholder="Write your name here" style="margin-bottom:11px!important">
+                                                            <input type="text" name="subject" placeholder="Write your subject here" style="margin-bottom:11px!important">
                                                             <span class="_help-block"></span>
                                                         </div>
 
                                                         <div class="span6">
-                                                            <input type="text" name="author[email]" placeholder="Write your email here" style="margin-bottom:11px!important">
+                                                            <input type="text" name="mail" placeholder="Write your email here" style="margin-bottom:11px!important">
                                                             <span class="_help-block"></span>
                                                         </div>
                                                     </div>
-
                                                     <div class="row-fluid">
                                                         <div class="span12">
-                                                            <textarea id="contactFormMessageText" name="text" placeholder="Write your message here" style="margin-bottom:11px!important"></textarea>
+                                                            <textarea id="contactFormMessageText" name="message" placeholder="Write your message here" style="margin-bottom:11px!important"></textarea>
                                                             <span class="_help-block"></span>
                                                         </div>
                                                     </div>
@@ -76,9 +73,7 @@
                                                             </button>
                                                         </div>
                                                     </div>
-
                                                 </fieldset>
-
                                             </form>
                                             <script type="text/javascript">
 

@@ -11,7 +11,7 @@ package model;
  */
 public interface DatabaseInfo {
     public final static String HOSTNAME = "jdbc:sqlserver://localhost:1433;databaseName=ConstructionMachinery;";
-    public final static String USERNAME = "swuull99";
-    public final static String PASSWORD = "1212";
+    public final static String USERNAME = "locnxde130108";
+    public final static String PASSWORD = "loc123";
     public final static String driverName = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
 }
