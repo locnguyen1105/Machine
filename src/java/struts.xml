@@ -6,5 +6,31 @@
     <include file="example.xml"/>
     <!-- Configuration for the default package. -->
     <package name="default" extends="struts-default">
+        
+        <interceptors>
+            <interceptor name="count" class="action.CountingInterceptor"/>
+            <interceptor-stack name="stack">
+                <interceptor-ref name="count"/>
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+        </interceptors>
+        <default-interceptor-ref name="stack"/>
+        
+        <action name="Home" class="action.HomeAction">
+            <result name="success">/Home.jsp</result>
+        </action>
+        
+        <action name="Sale" class="action.SaleAction">
+            <result name="success">/Sale.jsp</result>
+        </action>
+        
+        <action name="Info" class="action.InfoAction">
+            <result name="success">/AboutUs.jsp</result>
+        </action>
+        
+        <action name="Contact" class="action.ContactAction">
+            <result name="success">/Contact.jsp</result>
+        </action>
+        
     </package>
 </struts>
